@@ -3,5 +3,9 @@
     "sznm/react",
     "plugin:react/jsx-runtime",
     "plugin:@next/next/recommended"
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/no-use-before-define": "off",
+    "react/no-unused-prop-types":"off"
+  }
 }

@@ -13,7 +13,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <Box margin="0 auto" transition="0.5s ease-out">
-      <Box >
+      <Box>
         <Header />
         <Box as="main" marginY={0}>
           {children}
