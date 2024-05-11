@@ -1,5 +1,6 @@
 'use client';
 
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 import {
   Stack,
   Flex,
@@ -30,18 +31,18 @@ export default function Home() {
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
+            textShadow="3px 3px 2px rgba(20,9,5,0.19)"
           >
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-            eiusmod tempor
+            Upgrade Your Home with Premium Quality Windows and Doors -
+            Experience Unmatched Durability and Elegance!
           </Text>
           <Stack direction="row">
             <Button
-              bg="blue.400"
-              rounded="full"
-              color="white"
-              _hover={{ bg: 'blue.500' }}
+              rightIcon={<ArrowForwardIcon />}
+              colorScheme="blue"
+              variant="solid"
             >
-              Show me more
+              Get a Free Estimation
             </Button>
             <Button
               bg="whiteAlpha.300"

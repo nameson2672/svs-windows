@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <Box
       padding={{ base: 0, md: '0px 0px' }}
-      p={4}
+      p={0}
       w="100%"
       position="fixed"
       top="0"
@@ -40,7 +40,7 @@ export default function Header() {
         color={useColorModeValue('gray.600', 'white')}
         minH="60px"
         py={{ base: 2 }}
-        px={{ base: 4 }}
+        px={{ base: 4, md: 50, lg: 250 }}
         borderBottom={1}
         borderStyle="solid"
         borderColor={useColorModeValue('gray.200', 'gray.900')}
@@ -54,11 +54,7 @@ export default function Header() {
           <IconButton
             onClick={onToggle}
             icon={
-              isOpen ? (
-                <CloseIcon w={18} h={18} />
-              ) : (
-                <HamburgerIcon w={20} h={20} />
-              )
+              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={6} h={6} />
             }
             variant="ghost"
             aria-label="Toggle Navigation"
@@ -275,16 +271,41 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Inspiration',
+    label: 'Windows',
     children: [
       {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
+        label: 'Casement',
+        subLabel: 'Hinged windows that swing outward.',
         href: '#',
       },
       {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
+        label: 'Double Slider',
+        subLabel: 'Windows with two horizontal sliding sashes.',
+        href: '#',
+      },
+      {
+        label: 'Double Hung',
+        subLabel: 'Traditional windows with two vertical sliding sashes.',
+        href: '#',
+      },
+      {
+        label: 'Single Slider',
+        subLabel: 'Similar to double sliders but with one movable sash.',
+        href: '#',
+      },
+      {
+        label: 'Single Hung',
+        subLabel: 'Windows with only the bottom sash movable.',
+        href: '#',
+      },
+      {
+        label: 'End Vent Slider',
+        subLabel: 'Windows with a fixed center pane and sliding side panels.',
+        href: '#',
+      },
+      {
+        label: 'Picture Window',
+        subLabel: 'Large fixed windows for scenic views.',
         href: '#',
       },
     ],
