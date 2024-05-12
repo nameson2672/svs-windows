@@ -9,9 +9,9 @@ import {
   VStack,
   useBreakpointValue,
 } from '@chakra-ui/react';
-import Windows from '~/lib/components/Windows';
 
-import FrameCard from '~/lib/components/card/FrameCard';
+import Testimonials from '~/lib/components/Testimonials';
+import Windows from '~/lib/components/Windows';
 
 export default function Home() {
   return (
@@ -61,6 +61,7 @@ export default function Home() {
         </VStack>
       </Flex>
       <Windows />
+      <Testimonials />
     </>
   );
 }

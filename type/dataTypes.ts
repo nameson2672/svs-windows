@@ -3,3 +3,11 @@ export interface WindowType {
   description: string;
   imageUrl: string;
 }
+
+export interface TestimonialCardProps {
+  name: string;
+  role: string;
+  content: string;
+  avatar: string;
+  index: number;
+}

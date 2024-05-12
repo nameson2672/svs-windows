@@ -20,7 +20,8 @@ const windowTypes: Array<WindowType> = [
   {
     name: 'Casement',
     description: 'Hinged windows that swing outward.',
-    imageUrl: 'https://www.atrium.com/wp-content/uploads/2018/08/wsp-casement-700-img-600x600.jpg',
+    imageUrl:
+      'https://www.atrium.com/wp-content/uploads/2018/08/wsp-casement-700-img-600x600.jpg',
   },
   {
     name: 'Double Slider',
@@ -30,27 +31,32 @@ const windowTypes: Array<WindowType> = [
   {
     name: 'Double Hung',
     description: 'Traditional windows with two vertical sliding sashes.',
-    imageUrl: 'https://windowdepotupstate.com/wp-content/uploads/2019/04/DHHeroimg1.jpg',
+    imageUrl:
+      'https://windowdepotupstate.com/wp-content/uploads/2019/04/DHHeroimg1.jpg',
   },
   {
     name: 'Single Slider',
     description: 'Similar to double sliders but with one movable sash.',
-    imageUrl: 'https://magicwindow.ca/wp-content/uploads/2021/09/hungwindow-610x666.png',
+    imageUrl:
+      'https://magicwindow.ca/wp-content/uploads/2021/09/hungwindow-610x666.png',
   },
   {
     name: 'Single Hung',
     description: 'Windows with only the bottom sash movable.',
-    imageUrl: 'https://www.windowdoor.com/wp-content/uploads/2022/09/WindowCleaning-703x1024.jpg',
+    imageUrl:
+      'https://www.windowdoor.com/wp-content/uploads/2022/09/WindowCleaning-703x1024.jpg',
   },
   {
     name: 'End Vent Slider',
     description: 'Windows with a fixed center pane and sliding side panels.',
-    imageUrl: 'https://weathergard.com/replacement-windows/sliding/img/huntington-woods-end-vent.jpg',
+    imageUrl:
+      'https://weathergard.com/replacement-windows/sliding/img/huntington-woods-end-vent.jpg',
   },
   {
     name: 'Picture Window',
     description: 'Large fixed windows for scenic views.',
-    imageUrl: 'https://www.contemporist.com/wp-content/uploads/2022/03/modern-living-room-large-picture-window-160322-1228-04.jpg',
+    imageUrl:
+      'https://www.contemporist.com/wp-content/uploads/2022/03/modern-living-room-large-picture-window-160322-1228-04.jpg',
   },
 ];
 
