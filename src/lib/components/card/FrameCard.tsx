@@ -19,6 +19,7 @@ export default function FrameCard({ name, description, imageUrl }: WindowType) {
         p={6}
         maxW="330px"
         w="full"
+        mt={{ base: 50 }}
         bg={useColorModeValue('white', 'gray.800')}
         boxShadow="2xl"
         rounded="lg"
@@ -57,7 +58,7 @@ export default function FrameCard({ name, description, imageUrl }: WindowType) {
           />
         </Box>
         <Stack pt={10} align="center">
-          <Text color="gray.500" fontSize="sm" textTransform="uppercase">
+          <Text color="brand.500" fontSize="sm" textTransform="uppercase">
             {name}
           </Text>
           <Stack direction="row" align="center">

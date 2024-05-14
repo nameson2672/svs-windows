@@ -1,4 +1,11 @@
-import { Center, SimpleGrid } from '@chakra-ui/react';
+import {
+  Box,
+  Center,
+  Heading,
+  SimpleGrid,
+  VStack,
+  Text,
+} from '@chakra-ui/react';
 
 import type { WindowType } from '../../../type/dataTypes';
 
@@ -7,11 +14,23 @@ import FrameCard from './card/FrameCard';
 function Windows() {
   return (
     <Center>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={12} pt={12}>
-        {windowTypes.map((e) => (
-          <FrameCard {...e} />
-        ))}
-      </SimpleGrid>
+      <Box py="20">
+        <VStack spacing={2} textAlign="center">
+          <Heading as="h1" fontSize={{ base: 'md', md: '4xl' }}>
+            OUR WINDOW STYLES
+          </Heading>
+          <Text fontSize={{ base: 'md', md: 'lg' }} color="gray.500">
+            Our lineup of energy-efficient vinyl windows features a wide range
+            of styles, finishes and options to add value and curb appeal to any
+            home.
+          </Text>
+        </VStack>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={12} pt={12}>
+          {windowTypes.map((e) => (
+            <FrameCard {...e} />
+          ))}
+        </SimpleGrid>
+      </Box>
     </Center>
   );
 }

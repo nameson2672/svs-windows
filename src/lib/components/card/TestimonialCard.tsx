@@ -15,7 +15,7 @@ export default function TestimonialCard(props: TestimonialCardProps) {
   return (
     <Flex
       boxShadow="lg"
-      maxW="640px"
+      maxW="600px"
       direction={{ base: 'column-reverse', md: 'row' }}
       width="full"
       rounded="xl"

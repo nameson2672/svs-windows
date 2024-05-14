@@ -10,6 +10,7 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react';
 
+import SimpleThreeColumns from '~/lib/components/Features';
 import Testimonials from '~/lib/components/Testimonials';
 import Windows from '~/lib/components/Windows';
 
@@ -43,7 +44,7 @@ export default function Home() {
             <Stack direction="row">
               <Button
                 rightIcon={<ArrowForwardIcon />}
-                colorScheme="blue"
+                colorScheme="semibrand"
                 variant="solid"
               >
                 Get a Free Estimation
@@ -62,6 +63,7 @@ export default function Home() {
       </Flex>
       <Windows />
       <Testimonials />
+      <SimpleThreeColumns />
     </>
   );
 }

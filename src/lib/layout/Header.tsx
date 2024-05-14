@@ -21,6 +21,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Image
 } from '@chakra-ui/react';
 
 export default function Header() {
@@ -66,7 +67,7 @@ export default function Header() {
             fontFamily="heading"
             color={useColorModeValue('gray.800', 'white')}
           >
-            Logo
+            <Image h={16} src="./svs_logo.png" alt="SVS Windows Logo" />
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -89,10 +90,10 @@ export default function Header() {
             fontSize="sm"
             fontWeight={600}
             color="white"
-            bg="blue.400"
+            bg="brand.400"
             href="#"
             _hover={{
-              bg: 'blue.300',
+              bg: 'brand.300',
             }}
           >
             Sign Up
@@ -113,7 +114,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   return (
-    <Stack direction="row" spacing={4}>
+    <Stack direction="row" display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger="hover" placement="bottom-start">
@@ -166,13 +167,13 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display="block"
       p={2}
       rounded="md"
-      _hover={{ bg: useColorModeValue('blue.50', 'gray.900') }}
+      _hover={{ bg: useColorModeValue('brand.50', 'gray.900') }}
     >
       <Stack direction="row" align="center">
         <Box>
           <Text
             transition="all .3s ease"
-            _groupHover={{ color: 'blue.400' }}
+            _groupHover={{ color: 'brand.200' }}
             fontWeight={500}
           >
             {label}
@@ -276,12 +277,12 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Casement',
         subLabel: 'Hinged windows that swing outward.',
-        href: '#',
+        href: '/casement',
       },
       {
         label: 'Double Slider',
         subLabel: 'Windows with two horizontal sliding sashes.',
-        href: '#',
+        href: 'double-slider',
       },
       {
         label: 'Double Hung',
@@ -326,11 +327,11 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Learn Design',
-    href: '#',
+    label: 'Faq',
+    href: '/faq',
   },
   {
-    label: 'Hire Designers',
-    href: '#',
+    label: 'About Us',
+    href: '/about',
   },
 ];

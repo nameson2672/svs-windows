@@ -1,8 +1,8 @@
 import type { MetadataRoute } from 'next';
 
 const manifest = (): MetadataRoute.Manifest => ({
-  short_name: 'nextarter-chakra',
-  name: 'Next.js App Template',
+  short_name: 'Svs Windows',
+  name: 'SVS Windows And Doors',
   lang: 'en',
   start_url: '/',
   background_color: '#FFFFFF',
@@ -12,7 +12,7 @@ const manifest = (): MetadataRoute.Manifest => ({
   prefer_related_applications: false,
   icons: [
     {
-      src: '/vercel.svg',
+      src: '/svs_logo.tif',
       purpose: 'any',
       sizes: '48x48 72x72 96x96 128x128 256x256',
     },
