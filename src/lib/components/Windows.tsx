@@ -41,45 +41,52 @@ function Windows() {
 
 const windowTypes: Array<WindowType> = [
   {
+    name: 'Awning Window',
+    description: 'Windows hinged at the top and opening outward.',
+    link: 'awning',
+    imageUrl: '/show/awning.jpeg',
+  },
+  {
     name: 'Casement',
     description: 'Hinged windows that swing outward.',
-    imageUrl:
-      'https://www.atrium.com/wp-content/uploads/2018/08/wsp-casement-700-img-600x600.jpg',
+    link: 'casement',
+    imageUrl: '/show/casement.jpeg',
   },
   {
     name: 'Double Slider',
     description: 'Windows with two horizontal sliding sashes.',
-    imageUrl: './slider_image-800x677.png',
+    imageUrl: '/slider_image-800x677.png',
+    link: 'double-slider',
   },
   {
     name: 'Double Hung',
     description: 'Traditional windows with two vertical sliding sashes.',
-    imageUrl:
-      'https://windowdepotupstate.com/wp-content/uploads/2019/04/DHHeroimg1.jpg',
+    imageUrl: '/show/double-hung.jpg',
+    link: 'double-hung',
   },
   {
     name: 'Single Slider',
     description: 'Similar to double sliders but with one movable sash.',
-    imageUrl:
-      'https://magicwindow.ca/wp-content/uploads/2021/09/hungwindow-610x666.png',
+    imageUrl: '/show/single-slider.jpg',
+    link: 'single-slider',
   },
   {
     name: 'Single Hung',
     description: 'Windows with only the bottom sash movable.',
-    imageUrl:
-      'https://www.windowdoor.com/wp-content/uploads/2022/09/WindowCleaning-703x1024.jpg',
+    imageUrl: '/show/single-hung.png',
+    link: 'single-hung',
   },
   {
     name: 'End Vent Slider',
     description: 'Windows with a fixed center pane and sliding side panels.',
-    imageUrl:
-      'https://weathergard.com/replacement-windows/sliding/img/huntington-woods-end-vent.jpg',
+    imageUrl: '/show/end-vent.jpeg',
+    link: 'end-vent-slider',
   },
   {
     name: 'Picture Window',
     description: 'Large fixed windows for scenic views.',
-    imageUrl:
-      'https://www.contemporist.com/wp-content/uploads/2022/03/modern-living-room-large-picture-window-160322-1228-04.jpg',
+    imageUrl: '/show/picture.jpg',
+    link: 'picture',
   },
 ];
 

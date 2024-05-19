@@ -19,7 +19,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Image,
 } from '@chakra-ui/react';
@@ -62,13 +61,9 @@ export default function Header() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily="heading"
-            color={useColorModeValue('gray.800', 'white')}
-          >
-            <Image h={16} src="./svs_logo.png" alt="SVS Windows Logo" />
-          </Text>
+          <Box as="a" href="/">
+            <Image h={16} src="/svs_logo.png" alt="SVS Windows Logo" />
+          </Box>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -281,39 +276,44 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'Windows',
     children: [
       {
-        label: 'Casement',
-        subLabel: 'Hinged windows that swing outward.',
-        href: '/casement',
+        label: 'Awning Window',
+        subLabel: 'Windows hinged at the top and opening outward.',
+        href: '/windows/awning',
       },
       {
-        label: 'Double Slider',
-        subLabel: 'Windows with two horizontal sliding sashes.',
-        href: 'double-slider',
+        label: 'Casement',
+        subLabel: 'Hinged windows that swing outward.',
+        href: '/windows/casement',
       },
       {
         label: 'Double Hung',
         subLabel: 'Traditional windows with two vertical sliding sashes.',
-        href: '#',
+        href: '/windows/double-hung',
       },
       {
-        label: 'Single Slider',
-        subLabel: 'Similar to double sliders but with one movable sash.',
-        href: '#',
-      },
-      {
-        label: 'Single Hung',
-        subLabel: 'Windows with only the bottom sash movable.',
-        href: '#',
+        label: 'Double Slider',
+        subLabel: 'Windows with two horizontal sliding sashes.',
+        href: '/windows/double-slider',
       },
       {
         label: 'End Vent Slider',
         subLabel: 'Windows with a fixed center pane and sliding side panels.',
-        href: '#',
+        href: '/windows/end-vent-slider',
       },
       {
         label: 'Picture Window',
         subLabel: 'Large fixed windows for scenic views.',
-        href: '#',
+        href: '/windows/picture',
+      },
+      {
+        label: 'Single Hung',
+        subLabel: 'Windows with only the bottom sash movable.',
+        href: '/windows/single-hung',
+      },
+      {
+        label: 'Single Slider',
+        subLabel: 'Similar to double sliders but with one movable sash.',
+        href: '/windows/single-slider',
       },
     ],
   },

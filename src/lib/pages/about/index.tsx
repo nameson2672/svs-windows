@@ -6,9 +6,9 @@ import { Box, Text } from '@chakra-ui/react';
 
 export default function About() {
   return (
-    <Box mt="20" mx="auto" maxWidth={{ base: '600px', md: '1200px' }}>
+    <Box mt="5" mx="auto" maxWidth={{ base: '600px', md: '1200px' }}>
       <Text
-        color="blue.400"
+        color="brand.400"
         fontWeight={700}
         lineHeight={1.2}
         p={2}

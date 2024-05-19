@@ -2,6 +2,7 @@ export interface WindowType {
   name: string;
   description: string;
   imageUrl: string;
+  link:string;
 }
 
 export interface TestimonialCardProps {

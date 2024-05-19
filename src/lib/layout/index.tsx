@@ -15,7 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
     <Box margin="0 auto" transition="0.5s ease-out">
       <Box>
         <Header />
-        <Box as="main" marginY={0}>
+        <Box as="main" paddingTop={20}>
           {children}
         </Box>
         <Footer />

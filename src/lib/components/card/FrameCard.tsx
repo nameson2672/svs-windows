@@ -11,9 +11,14 @@ import {
 
 import type { WindowType } from '../../../../type/dataTypes';
 
-export default function FrameCard({ name, description, imageUrl }: WindowType) {
+export default function FrameCard({
+  name,
+  description,
+  imageUrl,
+  link,
+}: WindowType) {
   return (
-    <Center>
+    <Center as="a" href={`/windows/${link}`}>
       <Box
         role="group"
         p={6}

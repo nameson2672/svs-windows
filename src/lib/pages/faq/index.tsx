@@ -6,16 +6,7 @@ import FAQItem from '~/lib/components/card/FaqItemCard';
 
 export default function Faq() {
   return (
-    <Flex
-      bg="gray.200"
-      _dark={{
-        bg: 'gray.600',
-      }}
-      p={{ base: '2', md: '20' }}
-      mt={{ base: '8', md: '10' }}
-      justifyContent="center"
-      alignItems="center"
-    >
+    <Flex justifyContent="center" alignItems="center">
       <Box
         py={12}
         bg="white"

@@ -67,8 +67,8 @@ export default function Footer() {
           spacing={8}
         >
           <Stack spacing={6}>
-            <Box>
-              <Image h={16} src="./svs_logo.png" alt="SVS Windows Logo" />
+            <Box as="a" href="/">
+              <Image h={16} src="/svs_logo.png" alt="SVS Windows Logo" />
             </Box>
             <Text fontSize="sm">
               © 2024 SVS Windows & Door. All rights reserved
