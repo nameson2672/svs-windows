@@ -2,7 +2,6 @@ import {
   Box,
   chakra,
   Flex,
-  Icon,
   SimpleGrid,
   useColorModeValue,
 } from '@chakra-ui/react';
@@ -81,7 +80,7 @@ export default function Testimonials() {
           fontWeight="bold"
           color={useColorModeValue('gray.700', 'gray.50')}
         >
-          You're in good company
+          You&apos;re in good company
         </chakra.h1>
         <chakra.h2
           margin="auto"

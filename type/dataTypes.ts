@@ -11,3 +11,8 @@ export interface TestimonialCardProps {
   avatar: string;
   index: number;
 }
+
+export interface FAQItemInterface {
+  question: string;
+  answer: string;
+}

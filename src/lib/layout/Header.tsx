@@ -21,7 +21,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
-  Image
+  Image,
 } from '@chakra-ui/react';
 
 export default function Header() {
@@ -114,7 +114,13 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   return (
-    <Stack direction="row" display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={4}>
+    <Stack
+      direction="row"
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      spacing={4}
+    >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger="hover" placement="bottom-start">

@@ -16,7 +16,11 @@ function Windows() {
     <Center>
       <Box py="20">
         <VStack spacing={2} textAlign="center">
-          <Heading as="h1" fontSize={{ base: 'md', md: '4xl' }}>
+          <Heading
+            as="h2"
+            color="gray.600"
+            fontSize={{ base: 'md', md: '4xl' }}
+          >
             OUR WINDOW STYLES
           </Heading>
           <Text fontSize={{ base: 'md', md: 'lg' }} color="gray.500">

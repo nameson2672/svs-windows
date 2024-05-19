@@ -8,7 +8,9 @@ import {
   chakra,
 } from '@chakra-ui/react';
 
-const FAQItem = ({ question, answer }) => {
+import type { FAQItemInterface } from '~/../type/dataTypes';
+
+const FAQItem = ({ question, answer }: FAQItemInterface) => {
   return (
     <AccordionItem
       borderColor="gray.200"
