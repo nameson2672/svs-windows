@@ -7,7 +7,7 @@ type RootLayoutProps = {
   children: React.ReactNode;
 };
 
-const APP_NAME = 'SVS Windows & Doors';
+const APP_NAME = 'SVS Windows & Doors | MANUFACTURER';
 
 export const metadata: Metadata = {
   title: { default: APP_NAME, template: '%s | Home' },
