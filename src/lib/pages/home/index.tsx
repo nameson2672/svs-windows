@@ -49,14 +49,6 @@ export default function Home() {
               >
                 Get a Free Estimation
               </Button>
-              <Button
-                bg="whiteAlpha.300"
-                rounded="full"
-                color="white"
-                _hover={{ bg: 'whiteAlpha.500' }}
-              >
-                Show me more
-              </Button>
             </Stack>
           </Stack>
         </VStack>

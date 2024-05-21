@@ -1,5 +1,6 @@
 'use clinet';
 
+import { ArrowForwardIcon } from '@chakra-ui/icons';
 import {
   Box,
   Center,
@@ -7,7 +8,9 @@ import {
   Text,
   Stack,
   Image,
+  Button,
 } from '@chakra-ui/react';
+import Link from 'next/link';
 
 import type { WindowType } from '../../../../type/dataTypes';
 
@@ -18,7 +21,7 @@ export default function FrameCard({
   link,
 }: WindowType) {
   return (
-    <Center as="a" href={`/windows/${link}`}>
+    <Center as={Link} href={`/windows/${link}`}>
       <Box
         role="group"
         p={6}
@@ -63,12 +66,22 @@ export default function FrameCard({
           />
         </Box>
         <Stack pt={10} align="center">
-          <Text color="brand.500" fontSize="sm" textTransform="uppercase">
+          <Text color="brand.500" fontSize="md" textTransform="uppercase">
             {name}
           </Text>
           <Stack direction="row" align="center">
-            <Text>{description}</Text>
+            <Text color="gray.500">{description}</Text>
           </Stack>
+          <Button
+            w="full"
+            rightIcon={<ArrowForwardIcon />}
+            colorScheme="brand"
+            variant="outline"
+            as={Link}
+            href={`/windows/${link}`}
+          >
+            View Details
+          </Button>
         </Stack>
       </Box>
     </Center>

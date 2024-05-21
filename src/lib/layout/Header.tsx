@@ -22,6 +22,7 @@ import {
   useDisclosure,
   Image,
 } from '@chakra-ui/react';
+import Link from 'next/link';
 
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
@@ -61,7 +62,7 @@ export default function Header() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Box as="a" href="/">
+          <Box as={Link} href="/">
             <Image h={16} src="/svs_logo.png" alt="SVS Windows Logo" />
           </Box>
 
@@ -77,13 +78,13 @@ export default function Header() {
           spacing={6}
         >
           <Button
-            as="a"
+            as={Link}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize="sm"
             fontWeight={600}
             color="white"
             bg="brand.400"
-            href="#"
+            href="/estimation"
             _hover={{
               bg: 'brand.300',
             }}
@@ -118,7 +119,7 @@ const DesktopNav = () => {
           <Popover trigger="hover" placement="bottom-start">
             <PopoverTrigger>
               <Box
-                as="a"
+                as={Link}
                 p={2}
                 href={navItem.href ?? '#'}
                 fontSize="sm"
@@ -159,7 +160,7 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
     <Box
-      as="a"
+      as={Link}
       href={href}
       role="group"
       display="block"
@@ -215,7 +216,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
     <Stack spacing={4} onClick={children && onToggle}>
       <Box
         py={2}
-        as="a"
+        as={Link}
         href={href ?? '#'}
         justifyContent="space-between"
         alignItems="center"

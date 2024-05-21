@@ -90,7 +90,10 @@ export default function Testimonials() {
           color={useColorModeValue('gray.500', 'gray.400')}
         >
           See why over{' '}
-          <chakra.strong color={useColorModeValue('gray.700', 'gray.50')}>
+          <chakra.strong
+            bgGradient="linear(to-r, semibrand.400,pink.400)"
+            bgClip="text"
+          >
             1500+
           </chakra.strong>{' '}
           home use our windows and door to build their home!

@@ -19,11 +19,11 @@ function Windows() {
           <Heading
             as="h2"
             color="gray.600"
-            fontSize={{ base: 'md', md: '4xl' }}
+            fontSize={{ base: 'md', md: '3xl' }}
           >
             OUR WINDOW STYLES
           </Heading>
-          <Text fontSize={{ base: 'md', md: 'lg' }} color="gray.500">
+          <Text fontSize={{ base: 'sm', md: 'md' }} color="gray.500">
             Our lineup of energy-efficient vinyl windows features a wide range
             of styles, finishes and options to add value and curb appeal to any
             home.

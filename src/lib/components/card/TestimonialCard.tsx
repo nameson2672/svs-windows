@@ -50,7 +50,13 @@ export default function TestimonialCard(props: TestimonialCardProps) {
       }}
     >
       <Flex direction="column" textAlign="left" justifyContent="space-between">
-        <chakra.p fontFamily="Inter" fontWeight="medium" fontSize="15px" pb={4}>
+        <chakra.p
+          fontFamily="Inter"
+          fontWeight="medium"
+          fontSize="15px"
+          pb={4}
+          color="gray.500"
+        >
           {content}
         </chakra.p>
         <chakra.p fontFamily="Work Sans" fontWeight="bold" fontSize={14}>

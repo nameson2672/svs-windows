@@ -2,7 +2,6 @@ import {
   Box,
   chakra,
   Container,
-  Link,
   SimpleGrid,
   Stack,
   Text,
@@ -11,6 +10,7 @@ import {
   Center,
   Image,
 } from '@chakra-ui/react';
+import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 

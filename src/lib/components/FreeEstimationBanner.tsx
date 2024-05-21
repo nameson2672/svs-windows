@@ -1,6 +1,7 @@
 'use client';
 
-import { Box, Flex, Link, Stack, chakra } from '@chakra-ui/react';
+import { Link } from '@chakra-ui/next-js';
+import { Box, Flex, Stack, chakra } from '@chakra-ui/react';
 
 const FreeEstimationBanner = () => {
   return (
@@ -85,6 +86,7 @@ const FreeEstimationBanner = () => {
                 border="solid transparent"
                 fontWeight="bold"
                 rounded="md"
+                href="/estimation"
                 _light={{
                   color: 'white',
                 }}
