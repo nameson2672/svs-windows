@@ -11,7 +11,8 @@ const APP_NAME = 'SVS Windows & Doors';
 
 export const metadata: Metadata = {
   title: { default: APP_NAME, template: '%s | Home' },
-  description: 'Upgrade Your Home with Premium Quality Windows and Doors - Experience Unmatched Durability and Elegance!',
+  description:
+    'Upgrade Your Home with Premium Quality Windows and Doors - Experience Unmatched Durability and Elegance!',
   applicationName: APP_NAME,
   appleWebApp: {
     capable: true,
@@ -24,7 +25,8 @@ export const metadata: Metadata = {
   openGraph: {
     url: 'https://svs-windows.vercel.app/',
     title: 'SVS Windows & Doors',
-    description: 'Upgrade Your Home with Premium Quality Windows and Doors - Experience Unmatched Durability and Elegance!',
+    description:
+      'Upgrade Your Home with Premium Quality Windows and Doors - Experience Unmatched Durability and Elegance!',
     images: {
       url: 'https://svs-windows.vercel.app/meta-image.png',
       alt: 'svs windows og-image',
