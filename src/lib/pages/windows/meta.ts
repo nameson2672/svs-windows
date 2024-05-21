@@ -14,14 +14,14 @@ export const generateMetadata = ({
 
   const pageUrl = `${baseUrl}/windows/${windowData.slug}`;
   return {
-    title: windowData.name,
+    title: `SVS Windows & Door | ${windowData.name}`,
     alternates: {
       canonical: pageUrl,
     },
     openGraph: {
-      title: `${windowData.name} | sozonome`,
+      title: `${windowData.name}`,
       images: {
-        url: windowData.showcaseImage,
+        url: `https://svs-windows.vercel.app/${windowData.showcaseImage}`,
         alt: `${windowData.description} og image`,
       },
     },

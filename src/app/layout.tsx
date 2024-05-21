@@ -10,7 +10,7 @@ type RootLayoutProps = {
 const APP_NAME = 'SVS Windows & Doors | MANUFACTURER';
 
 export const metadata: Metadata = {
-  title: { default: APP_NAME, template: '%s | Home' },
+  title: { default: APP_NAME, template: '%s' },
   description:
     'Upgrade Your Home with Premium Quality Windows and Doors - Experience Unmatched Durability and Elegance!',
   applicationName: APP_NAME,
