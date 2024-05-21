@@ -76,9 +76,6 @@ export default function Header() {
           direction="row"
           spacing={6}
         >
-          <Button as="a" fontSize="sm" fontWeight={400} variant="link" href="#">
-            Sign In
-          </Button>
           <Button
             as="a"
             display={{ base: 'none', md: 'inline-flex' }}
@@ -91,7 +88,7 @@ export default function Header() {
               bg: 'brand.300',
             }}
           >
-            Sign Up
+            Get A Free Estimation
           </Button>
         </Stack>
       </Flex>
@@ -314,21 +311,6 @@ const NAV_ITEMS: Array<NavItem> = [
         label: 'Single Slider',
         subLabel: 'Similar to double sliders but with one movable sash.',
         href: '/windows/single-slider',
-      },
-    ],
-  },
-  {
-    label: 'Find Work',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
       },
     ],
   },

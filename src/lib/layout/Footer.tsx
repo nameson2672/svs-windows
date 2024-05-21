@@ -86,20 +86,20 @@ export default function Footer() {
             </Stack>
           </Stack>
           <Stack align="flex-start">
-            <ListHeader>Company</ListHeader>
-            <Link href="//aboutabout">About us</Link>
-            <Link href="/about">Blog</Link>
-            <Link href="/about">Contact us</Link>
-            <Link href="/about">Pricing</Link>
-            <Link href="/about">Testimonials</Link>
+            <ListHeader>Windows</ListHeader>
+            <Link href="/windows/awning">Awning</Link>
+            <Link href="/windows/casement">Casement</Link>
+            <Link href="/windows/double-hung">Double Hung</Link>
+            <Link href="/windows/double-slider">Double Slider</Link>
+            <Link href="/windows/end-vent-slider">End Vent Slider</Link>
+            <Link href="/windows/picture">Picture</Link>
+            <Link href="/windows/single-hung">Single Hung</Link>
+            <Link href="/windows/single-slider">Single Slider</Link>
           </Stack>
           <Stack align="flex-start">
             <ListHeader>Support</ListHeader>
-            <Link href="/about">Help Center</Link>
-            <Link href="/about">Terms of Service</Link>
-            <Link href="/about">Legal</Link>
-            <Link href="/about">Privacy Policy</Link>
-            <Link href="/about">Satus</Link>
+            <Link href="/about">About us</Link>
+            <Link href="/faq">Faq</Link>
           </Stack>
         </SimpleGrid>
         <SmallWithSocial />

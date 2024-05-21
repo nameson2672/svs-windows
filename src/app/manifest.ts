@@ -12,7 +12,7 @@ const manifest = (): MetadataRoute.Manifest => ({
   prefer_related_applications: false,
   icons: [
     {
-      src: '/svs_logo.tif',
+      src: './svs_logo.png',
       purpose: 'any',
       sizes: '48x48 72x72 96x96 128x128 256x256',
     },
