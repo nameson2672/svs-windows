@@ -116,7 +116,7 @@ function SmallWithSocial() {
     >
       <Container as={Stack} maxW="6xl" py={4} spacing={4}>
         <Center>
-          <Link href="https://www.nameson.com.np" isExternal>
+          <Link href="https://www.nameson.com.np">
             © 2024 Build By Nameson Gaudel.
           </Link>
         </Center>
